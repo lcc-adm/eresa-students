@@ -25,9 +25,8 @@ body {
   text-align: center;
   background: #150C6D;
   background: url(noise.png), -webkit-linear-gradient(bottom left, #150C6D, #B92359);
-  background: url(noise.png), -moz-linear-gradient(bottom left, #150C6D, #B92359);
-  background: url(noise.png), linear-gradient(bottom left, #150C6D, #B92359);
-      background-attachment: fixed;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
   width: 100%;
   height: 100%;
 }
@@ -72,8 +71,8 @@ h2 {
 }
 
 .grid div:hover {
-  flex-basis: 80vw;
-  flex-grow: 2;
+/* flex-basis: 80vw; */
+/*  flex-grow: 2; */
   background: #fffc;
 }
 
