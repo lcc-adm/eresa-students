@@ -4,6 +4,8 @@
   --black: #444;
   --whitish: #f7f4e6;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -26,7 +28,7 @@ body {
   font-kerning: normal;
   text-align: center;
   background: #150C6D;
-  background: url(noise.png), var(--blue);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMV…HwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==),var(--blue);
   background-attachment: fixed;
   background-blend-mode: multiply;
   width: 100%;
@@ -44,17 +46,30 @@ h1 {
   text-transform: uppercase;
   background: var(--whitish);
   color: var(--black);
-  letter-spacing: .5rem;
+  letter-spacing: .3rem;
   display: block;
-  padding: .8rem;
+  padding: 1rem;
   max-width: 55vw;
   line-height: 2rem;
   margin: auto;
+  border: 2px solid var(--black);
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  color: var(--whitish);
+  background: var(--black);
+  padding: .6rem;
+  letter-spacing: .2rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
   color: var(--black);
+  letter-spacing: .3rem;
+  padding-bottom: .8rem;
 }
 
 /* grid setup */
@@ -70,7 +85,6 @@ h2 {
   padding: 2rem;
   margin: 1rem;
   background: var(--whitish);
-  box-shadow: 2px 3px 0px var(--whitish);
   border: 2px solid var(--black);
   flex-grow: 1;
   flex-basis: 20vw;
@@ -89,8 +103,7 @@ a {
 a:hover {
   background: var(--black);
   color: var(--whitish);
-  transform: scale(1.2);
-  box-shadow: 2px 2px 2px #49494233;
+  transform: scale(1.3);
   text-transform: uppercase;
 }
 
@@ -141,7 +154,6 @@ li {
   .grid div {
     padding: 2rem;
     margin: 1rem;
-    box-shadow: 2px 2px 0px var(--whitish);
     flex-basis: 35vw;
     transition: flex-basis .5s;
     text-align: center;
@@ -149,5 +161,10 @@ li {
 
   .grid div:hover {
     flex-basis: 100vw;
+  }
+
+  h2 {
+    max-width: 70vw;
+    margin: 1rem auto;
   }
 }
