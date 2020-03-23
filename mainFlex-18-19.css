@@ -1,8 +1,6 @@
 :root {
-  --blue: #26c6da;
-  --white: #ccc;
-  --black: #444;
-  --whitish: #f7f4e6;
+  --blue-color: #150C6D;
+  --white-color: #ffffffe6;
   position: relative;
 }
 
@@ -16,7 +14,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Montserrat, sans-serif;
   font-weight: 400;
-  color: var(--whitish);
+  color: var(--white-color);
   line-height: 1.8rem;
   letter-spacing: .2px;
   font-size: 1rem;
@@ -26,7 +24,7 @@ body {
   font-kerning: normal;
   text-align: center;
   background: #150C6D;
-  background: url(noise.png), var(--blue);
+  background: url(noise.png), -webkit-linear-gradient(bottom left, #150C6D, #B92359);
   background-attachment: fixed;
   background-blend-mode: multiply;
   width: 100%;
@@ -36,25 +34,19 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 900;
+  line-height: 2rem;
 }
 
 h1 {
   font-size: 2.2rem;
   text-transform: uppercase;
-  background: var(--whitish);
-  color: var(--black);
-  letter-spacing: .5rem;
-  display: block;
-  padding: .8rem;
-  max-width: 55vw;
-  line-height: 2rem;
-  margin: auto;
+  text-shadow: 2px 2px 2px #49494233;
 }
 
 h2 {
   font-size: 1.6rem;
-  color: var(--black);
+  font-weight: 700;
 }
 
 /* grid setup */
@@ -63,32 +55,39 @@ h2 {
   margin-bottom: 3rem;
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 80%;
 }
 
 .grid div {
   padding: 2rem;
   margin: 1rem;
-  background: var(--whitish);
-  box-shadow: 2px 3px 0px var(--whitish);
-  border: 2px solid var(--black);
+  background: #fff9;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 2px #49494233;
   flex-grow: 1;
-  flex-basis: 20vw;
+  flex-basis: 25vw;
   transition: flex-basis .8s, flex-grow .8s, background .8s;
   text-align: center;
 }
 
+.grid div:hover {
+/* flex-basis: 80vw; */
+/*  flex-grow: 2; */
+  background: #fffc;
+}
+
 a {
-  color: var(--blue);
+  color: var(--blue-color);
   font-weight: 400;
   text-decoration: none;
   display: block;
+  border-radius: .4rem;
   transition: .3s transform, background .2s, color .2s, text-transform .2s;
 }
 
 a:hover {
-  background: var(--black);
-  color: var(--whitish);
+  background: #B92359;
+  color: var(--white-color);
   transform: scale(1.2);
   box-shadow: 2px 2px 2px #49494233;
   text-transform: uppercase;
@@ -100,7 +99,7 @@ strong {
 
 hr {
   margin: 2rem;
-  border-bottom: 1px var(--black);
+  border-bottom: 1px var(--black-color);
   height: 0;
 }
 
@@ -124,7 +123,7 @@ ul {
 }
 
 li {
-  margin-bottom: .4rem;
+  margin-bottom: .8rem;
 }
 
 /* column layout for larger screens */
@@ -141,7 +140,9 @@ li {
   .grid div {
     padding: 2rem;
     margin: 1rem;
-    box-shadow: 2px 2px 0px var(--whitish);
+    background: #fffc;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px #49494233;
     flex-basis: 35vw;
     transition: flex-basis .5s;
     text-align: center;
