@@ -74,6 +74,10 @@ h3 {
   margin: 0;
 }
 
+/* fade missing student links */
+
+del a {opacity: .2;}
+
 /* grid setup */
 .grid {
   margin: 1rem auto;
@@ -84,12 +88,12 @@ h3 {
 }
 
 .grid div {
-  padding: 0 2rem;
+  padding: 0 3rem;
   margin: 1rem;
   /*background: var(--whitish);*/
   /*border: 2px solid var(--black);*/
   flex-grow: 1;
-  flex-basis: 20vw;
+  flex-basis: 10vw;
   transition: flex-basis .8s, flex-grow .8s, background .8s;
   text-align: center;
 }
