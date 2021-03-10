@@ -145,12 +145,14 @@ a:hover {
   position: fixed;
   bottom: 0;
   z-index: 4;
+  filter: blur(3px);
 }
 
 #wave1 path {
   fill: #b48b333d;
   stroke: #fff6;
   stroke-width: 0.2;
+  filter: blur(3px);
 }
 
 #wave2 {
