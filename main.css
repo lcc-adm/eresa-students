@@ -49,7 +49,6 @@ body {
 }
 
 section {
-  margin-top: 3rem;
   margin-bottom: 4rem;
   z-index: 10;
 }
@@ -64,7 +63,7 @@ header {
 header,
 section {
   background: #fff5;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px) brightness(1.1);
   border: 1px solid #fff7;
   border-radius: 2rem;
   box-shadow: 5px 10px 20px #0003;
@@ -83,11 +82,13 @@ h1 {
   color: #973271;
   font-size: 2.4rem;
   margin: 1rem auto;
-  padding: 1rem; 
+   /* 
+   padding: 1rem;
   backdrop-filter: blur(20px);
   border: 1px solid #fff3;
   border-radius: 1rem;
-  box-shadow: 1px 2px 3px #3333;
+  box-shadow: 1px 2px 3px #3333; 
+  */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,16 +103,18 @@ h2 {
 h3 {
   width: 8rem;
   margin: 1rem auto;
-  padding: 1rem; 
+  padding: 1rem;
+  /*
   backdrop-filter: blur(20px);
   border: 1px solid #fff3;
   border-radius: 1rem;
   box-shadow: 1px 2px 3px #3333;
+  */
   display: flex;
   justify-content: center;
   align-items: center;
   color: #973271;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 800;
   text-shadow: 1px 2px 3px #3333;
 }
@@ -145,14 +148,13 @@ a:hover {
   position: fixed;
   bottom: 0;
   z-index: 4;
-  filter: blur(3px);
+  filter: blur(2px);
 }
 
 #wave1 path {
   fill: #b48b333d;
   stroke: #fff6;
   stroke-width: 0.2;
-  filter: blur(3px);
 }
 
 #wave2 {
@@ -162,6 +164,7 @@ a:hover {
   position: fixed;
   bottom: 0;
   z-index: 2;
+  filter: blur(2px);
 }
 
 #wave2 path {
