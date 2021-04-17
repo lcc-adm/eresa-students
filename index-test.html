@@ -1,262 +1,249 @@
 <!doctype html>
 
 <head>
-      <meta charset="UTF-8">
-      <title>eresa student sites</title>
-      <meta name="description" content="eresa class files">
-      <meta name="author" content="chad bennett, lansing community college, art design multimedia">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-            * {
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-  position: relative;
-}
+  <meta charset="UTF-8">
+  <title>eresa student sites</title>
+  <meta name="description" content="eresa class files">
+  <meta name="author" content="chad bennett, lansing community college, art design multimedia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+      position: relative;
+    }
 
-html {
-  background-size: cover;
-  min-width: 100%;
-  min-height: 100%;
-  position: relative;
-  overflow: auto;
-}
+    html {
+      background-image: url("dots.svg");
+      background-size: 250px 250px;
+      background-attachment: fixed;
+      min-width: 100%;
+      min-height: 100%;
+      position: relative;
+      overflow: auto;
+    }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Montserrat, sans-serif;
-  font-weight: 400;
-  color: #333;
-  line-height: 1.8rem;
-  font-size: 1rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-kerning: normal;
-  text-align: center;
-  background-color: #ccc;
-  background-size: cover;
-  background-attachment: fixed;
-  background: #8a2387; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f27121,
-    #e94057,
-    #8a2387
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f27121,
-    #e94057,
-    #8a2387
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Montserrat, sans-serif;
+      font-weight: 400;
+      color: #333;
+      line-height: 1.8rem;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      text-align: center;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 24rem 2rem 24rem 1fr;
-  margin: 0;
-  padding: 0;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 24rem 2rem 24rem 1fr;
+      margin: 0;
+      padding: 0;
+    }
 
-section {
-  margin-bottom: 4rem;
-  z-index: 10;
-}
+    section {
+      margin-bottom: 4rem;
+      z-index: 10;
+    }
 
-header {
-  grid-column: 2 / 5;
-  margin: 2rem 0;
-  padding: 2rem;
-  padding-top: 1rem;
-}
+    header {
+      grid-column: 2 / 5;
+      margin: 2rem 0;
+      padding: 2rem;
+      padding-top: 1rem;
+    }
 
-header,
-section {
-  background: #fff5;
-  backdrop-filter: blur(20px) brightness(1.1);
-  border: 1px solid #fff7;
-  border-radius: 2rem;
-  box-shadow: 5px 10px 20px #0003;
-}
+    header,
+    section {
+      background: #fff5;
+      backdrop-filter: blur(20px) brightness(1.1);
+      border: 1px solid #fff7;
+      border-radius: 2rem;
+      box-shadow: 5px 10px 20px #0003;
+    }
 
-#AM {
-  grid-column: 2 / 3;
-}
+    #AM {
+      grid-column: 2 / 3;
+    }
 
-#PM {
-  grid-column: 4 / 5;
-}
+    #PM {
+      grid-column: 4 / 5;
+    }
 
-h1 {
-  font-weight: 700;
-  color: #973271;
-  font-size: 2.4rem;
-  margin: 1rem auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
-  text-shadow: 1px 2px 3px #3333;
-}
+    h1 {
+      font-weight: 700;
+      color: #973271;
+      font-size: 2.4rem;
+      margin: 1rem auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 800;
+      text-shadow: 1px 2px 3px #3333;
+    }
 
-h2 {
-  font-weight: 600;
-}
+    h2 {
+      font-weight: 600;
+    }
 
-h3 {
-  width: 8rem;
-  margin: 1rem auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #973271;
-  font-size: 3rem;
-  font-weight: 800;
-  text-shadow: 1px 2px 3px #3333;
-}
+    h3 {
+      width: 8rem;
+      margin: 1rem auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #973271;
+      font-size: 3rem;
+      font-weight: 800;
+      text-shadow: 1px 2px 3px #3333;
+    }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 1rem;
-}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 1rem;
+    }
 
-li {
-  margin-bottom: 0.5rem;
-}
+    li {
+      margin-bottom: 0.5rem;
+    }
 
-a {
-  color: #333;
-  text-decoration: none;
-  transition: 0.3s transform;
-  display: block;
-}
+    a {
+      color: #333;
+      text-decoration: none;
+      transition: 0.3s transform;
+      display: block;
+    }
 
-a:hover {
-  text-transform: uppercase;
-  transform: scale(1.4);
-}
+    a:hover {
+      text-transform: uppercase;
+      transform: scale(1.4);
+    }
 
-#wave1 {
-  height: 40vh;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  z-index: 4;
-  filter: blur(2px);
-}
+    #wave1 {
+      height: 40vh;
+      width: 100vw;
+      position: fixed;
+      bottom: 0;
+      z-index: 4;
+      filter: blur(2px);
+    }
 
-#wave1 path {
-  fill: #b48b333d;
-  stroke: #fff6;
-  stroke-width: 0.2;
-}
+    #wave1 path {
+      fill: #b48b333d;
+      stroke: #fff6;
+      stroke-width: 0.2;
+    }
 
-#wave2 {
-  height: 90vh;
-  width: 100vw;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  z-index: 2;
-  filter: blur(2px);
-}
+    #wave2 {
+      height: 90vh;
+      width: 100vw;
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      z-index: 2;
+      filter: blur(2px);
+    }
 
-#wave2 path {
-  fill: #b462333d;
-  stroke: #fff6;
-  stroke-width: 0.2;
-}
+    #wave2 path {
+      fill: #b462333d;
+      stroke: #fff6;
+      stroke-width: 0.2;
+    }
 
-/* small screen single column */
-@media screen and (max-width: 800px) {
-  .grid {
-    grid-template-columns: 1fr 80% 1fr;
-  }
+    /* small screen single column */
+    @media screen and (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr 80% 1fr;
+      }
 
-  header,
-  #AM,
-  #PM {
-    grid-column: 2 / 3;
-  }
-}
-</style>
+      header,
+      #AM,
+      #PM {
+        grid-column: 2 / 3;
+      }
+    }
+  </style>
 </head>
 
 <body>
-      <div class="grid">
+  <div class="grid">
 
-            <header class="col-full header">
-                  <h1>DIGITAL MEDIA &amp; DESIGN</h1>
-                  <h2>student websites for 2020-2021 school year</h2>
-            </header>
+    <header class="col-full header">
+      <h1>DIGITAL MEDIA &amp; DESIGN</h1>
+      <h2>student websites for 2020-2021 school year</h2>
+    </header>
 
-            <section id="AM">
-                  <h3>AM</h3>
-                  <ul>
-                        <li><a href="#" target="_blank"><strong>Michaela</strong> Cheeseman</a></li>
-                        <li><a href="#" target="_blank"><strong>Gillian</strong> Clara</a></li>
-                        <li><a href="https://leo5d1.github.io/lcc-site/"
-                                    target="_blank"><strong>Liam</strong> Doyle</a></li>
-                        <li><a href="#" target="_blank"><strong>Chaz</strong> Dyer</a></li>
-                        <li><a href="https://aurora-french.github.io/eresa-site/"
-                                    target="_blank"><strong>Ari</strong> French</a></li>
-                        <li><a href="https://webmasterjose.github.io/LCC-site/"
-                                    target="_blank"><strong>Jose</strong> Grace</a></li>
-                        <li><a href="https://lowellhalliwill.github.io/lcc-site/"
-                                    target="_blank"><strong>Lowell</strong> Halliwill</a></li>
-                        <li><a href="haleyha1.github.io/haley-hi" target="_blank"><strong>Haley</strong> Hansen</a></li>
-                        <li><a href="https://marynm11.github.io/lcc-site-/"
-                                    target="_blank"><strong>Maryn</strong> Moore</a></li>
-                        <li><a href="#" target="_blank"><strong>Karlie</strong> Morey</a></li>
-                        <li><a href="#" target="_blank"><strong>Michaela</strong> O'Brien</a></li>
-                        <li><a href="https://nolan-200.github.io/Am-demo-/"
-                                    target="_blank"><strong>Nolan</strong> Schaeding</a></li>
-                        <li><a href="https://evanstarmer.github.io/lcc-site/"
-                                    target="_blank"><strong>Evan</strong> Starmer</a></li>
-                        <li><a href="https://katrs.github.io/EResaSite/"
-                                    target="_blank"><strong>Kat</strong> Stauss</a></li>
-                        <li><a href="https://noah-vandlen.github.io/lcc-site/"
-                                    target="_blank"><strong>Noah</strong> Vandlen</a></li>
-                  </ul>
-            </section>
+    <section id="AM">
+      <h3>AM</h3>
+      <ul>
+        <li><a href="#" target="_blank"><strong>Michaela</strong> Cheeseman</a></li>
+        <li><a href="#" target="_blank"><strong>Gillian</strong> Clara</a></li>
+        <li><a href="https://leo5d1.github.io/lcc-site/" target="_blank"><strong>Liam</strong>
+            Doyle</a></li>
+        <li><a href="#" target="_blank"><strong>Chaz</strong> Dyer</a></li>
+        <li><a href="https://aurora-french.github.io/eresa-site/"
+            target="_blank"><strong>Ari</strong> French</a></li>
+        <li><a href="https://webmasterjose.github.io/LCC-site/"
+            target="_blank"><strong>Jose</strong> Grace</a></li>
+        <li><a href="https://lowellhalliwill.github.io/lcc-site/"
+            target="_blank"><strong>Lowell</strong> Halliwill</a></li>
+        <li><a href="haleyha1.github.io/haley-hi" target="_blank"><strong>Haley</strong> Hansen</a>
+        </li>
+        <li><a href="https://marynm11.github.io/lcc-site-/" target="_blank"><strong>Maryn</strong>
+            Moore</a></li>
+        <li><a href="#" target="_blank"><strong>Karlie</strong> Morey</a></li>
+        <li><a href="#" target="_blank"><strong>Michaela</strong> O'Brien</a></li>
+        <li><a href="https://nolan-200.github.io/Am-demo-/" target="_blank"><strong>Nolan</strong>
+            Schaeding</a></li>
+        <li><a href="https://evanstarmer.github.io/lcc-site/" target="_blank"><strong>Evan</strong>
+            Starmer</a></li>
+        <li><a href="https://katrs.github.io/EResaSite/" target="_blank"><strong>Kat</strong>
+            Stauss</a></li>
+        <li><a href="https://noah-vandlen.github.io/lcc-site/" target="_blank"><strong>Noah</strong>
+            Vandlen</a></li>
+      </ul>
+    </section>
 
-            <section id="PM">
-                  <h3>PM</h3>
-                  <ul>
-                        <li><a href="https://emileeallwardt.github.io/lccpage/"
-                                    target="_blank"><strong>Emilee</strong> Allwardt</a></li>
-                        <li><a href="#" target="_blank"><strong>Nyla</strong> Anjou</a></li>
-                        <li><a href="#" target="_blank"><strong>Karlie</strong> Dahms</a></li>
-                        <li><a href="#" target="_blank"><strong>Mollie</strong> Hoover</a></li>
-                        <li><a href="https://karenmitchell17.github.io/eatonresa/"
-                                    target="_blank"><strong>Karen</strong> Mitchell</a></li>
-                        <li><a href="https://aly-montiel.github.io/my-site/"
-                                    target="_blank"><strong>Aly</strong> Montiel</a></li>
-                        <li><a href="https://gabriel-pusey.github.io/lcc-site/"
-                                    target="_blank"><strong>Gabriel</strong> Pusey</a></li>
-                        <li><a href="https://musicismysafeplace.github.io/eresa/"
-                                    target="_blank"><strong>Isela</strong> Saldivar</a></li>
-                  </ul>
-            </section>
-      </div>
+    <section id="PM">
+      <h3>PM</h3>
+      <ul>
+        <li><a href="https://emileeallwardt.github.io/lccpage/"
+            target="_blank"><strong>Emilee</strong> Allwardt</a></li>
+        <li><a href="#" target="_blank"><strong>Nyla</strong> Anjou</a></li>
+        <li><a href="#" target="_blank"><strong>Karlie</strong> Dahms</a></li>
+        <li><a href="#" target="_blank"><strong>Mollie</strong> Hoover</a></li>
+        <li><a href="https://karenmitchell17.github.io/eatonresa/"
+            target="_blank"><strong>Karen</strong> Mitchell</a></li>
+        <li><a href="https://aly-montiel.github.io/my-site/" target="_blank"><strong>Aly</strong>
+            Montiel</a></li>
+        <li><a href="https://gabriel-pusey.github.io/lcc-site/"
+            target="_blank"><strong>Gabriel</strong> Pusey</a></li>
+        <li><a href="https://musicismysafeplace.github.io/eresa/"
+            target="_blank"><strong>Isela</strong> Saldivar</a></li>
+      </ul>
+    </section>
+  </div>
 
-      <div id="wave1"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                  style="height: 100%; width: 100%;">
-                  <path
-                        d="M-0.00,49.92 C149.99,149.80 349.20,-49.93 500.00,49.92 L500.00,149.80 L-0.00,149.80 Z">
-                  </path>
-            </svg></div>
+  <div id="wave1"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
+      <path
+        d="M-0.00,49.92 C149.99,149.80 349.20,-49.93 500.00,49.92 L500.00,149.80 L-0.00,149.80 Z">
+      </path>
+    </svg></div>
 
-      <div id="wave2"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                  style="height: 100%; width: 100%;">
-                  <path
-                        d="M-0.00,49.92 C288.42,19.01 318.89,123.49 500.00,49.92 L500.00,149.80 L-0.00,149.80 Z">
-                  </path>
-            </svg></div>
+  <div id="wave2"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
+      <path
+        d="M-0.00,49.92 C288.42,19.01 318.89,123.49 500.00,49.92 L500.00,149.80 L-0.00,149.80 Z">
+      </path>
+    </svg></div>
 </body>
 
 </html>
